@@ -1,4 +1,6 @@
 def main():
+    import sympy
+
     plist = []
     ##################################################
     # Comlete your code here
@@ -14,11 +16,11 @@ def main():
             break
 
     while x < y:
-        if x % 2 == 0:
+        if sympy.isprime(x):
             plist.append(x)
         x += 1
 
-
+    print(plist)
     return plist
 
 
